@@ -7,13 +7,14 @@ const nextConfig = {
       "replicate.com",
       "replicate.delivery",
       "user-images.githubusercontent.com",
+      "bxdc-static.oss-cn-beijing.aliyuncs.com",
     ],
   },
   experimental: {
     images: {
       allowFutureImage: true,
     },
-  },  
+  },
   async redirects() {
     return [
       {
@@ -25,9 +26,9 @@ const nextConfig = {
         source: "/deploy",
         destination: "https://vercel.com/templates/next.js/paint-by-text",
         permanent: false,
-      },   
-    ]
-  }
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
